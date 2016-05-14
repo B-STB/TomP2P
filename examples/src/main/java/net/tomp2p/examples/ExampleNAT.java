@@ -51,6 +51,8 @@ public class ExampleNAT {
 		} else {
 			startServer();
 		}
+//		startClientNAT("192.168.42.189");
+//		startClientNAT("117.195.39.107");
 	}
 
 	public static void startClientNAT(String ip) throws Exception {

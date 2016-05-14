@@ -1,5 +1,6 @@
 package net.tomp2p.peers;
 
+import java.io.Serializable;
 import java.net.Inet4Address;
 import java.net.InetAddress;
 import java.net.InetSocketAddress;
@@ -14,8 +15,12 @@ import net.tomp2p.peers.IP.IPv6;
 import net.tomp2p.utils.Pair;
 import net.tomp2p.utils.Utils;
 
-public abstract class PeerSocketAddress {
+public abstract class PeerSocketAddress implements Serializable {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 6210480460620993805L;
 	public final static int PORT_SIZE = 6;
 	public abstract int size();
 	public abstract int encode(final byte[] array, int offset);

@@ -21,11 +21,12 @@ import net.tomp2p.peers.PeerAddress;
 public class ExampleDiscover {
 
 	public static void main(String[] args) throws Exception {
-		if (args.length > 0) {
-			startClient(args[0]);
-		} else {
-			startServer();
-		}
+//		if (args.length > 0) {
+//			startClient(args[0]);
+//		} else {
+//			startServer();
+//		}
+		startClient("192.168.42.189");
 	}
 
 	public static void startServer() throws Exception {

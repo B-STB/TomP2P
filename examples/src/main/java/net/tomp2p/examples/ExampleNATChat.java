@@ -51,15 +51,18 @@ public class ExampleNATChat {
 	}
 
 	public static void main(String[] args) throws Exception {
-		if (args.length > 1 && args[0].equals("bootstrap")) {
-			ExampleNATChat t = new ExampleNATChat();
-			t.startServer(args[1]);
-		} else if (args.length > 0) {
-			startClientNAT(args[0]);
-		} else {
-			System.err.println("Must be called with:" + "\n\tNATChat bootstrap <ip>\t\t(supernode)\n\t"
-			        + "NATChat <bootstrap ip>\t\t(normal node).\n");
-		}
+//		if (args.length > 1 && args[0].equals("bootstrap")) {
+//			ExampleNATChat t = new ExampleNATChat();
+//			t.startServer(args[1]);
+//		} else if (args.length > 0) {
+//			startClientNAT(args[0]);
+//		} else {
+//			System.err.println("Must be called with:" + "\n\tNATChat bootstrap <ip>\t\t(supernode)\n\t"
+//			        + "NATChat <bootstrap ip>\t\t(normal node).\n");
+//		}
+		
+		ExampleNATChat t = new ExampleNATChat();
+		t.startServer("117.195.39.107");
 	}
 
 	public static void startClientNAT(String ip) throws Exception {
